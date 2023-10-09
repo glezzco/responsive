@@ -1,0 +1,177 @@
+/*Principal*/
+:root{
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+}
+
+main{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+/*Principal*/
+
+/*Design*/
+/*First Text*/
+h1{
+    color: var(--Very_Dark_Magenta);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 4rem;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+  
+}
+/*First Text*/
+
+/*Second Text*/
+.text{
+    margin-top: -1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 0.93rem;
+    line-height: 1.3rem;
+    color: var(--Dark_Grayish_Magenta);
+    text-align: center;
+}
+/*Second Text*/
+/*Box-Star*/
+
+.star{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    color: var(--Very_Dark_Magenta);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    margin: 1rem;
+    background-color: var(--Light_Grayish_Magenta);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    
+}
+#star_img{
+    margin-bottom: -1rem;
+    margin-top: -2rem;
+    height: 5rem;
+    width: 6rem;
+}
+/*Box-Star*/
+
+/*Box-peole*/
+.people{
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    background-color: var(--Very_Dark_Magenta);
+    color: var(--White);
+    padding: 2rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.people h2{
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+    color: var(--Light_Grayish_Magenta);
+}
+.people p{
+    margin-top: -1rem;
+    color: var(--Soft_Pink);
+}
+.profile{
+    display: flex;
+    
+}
+.profile img{
+    margin-top: 0.5rem;
+    height: 3rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/*Box-peole*/
+
+/*media quieries*/
+@media screen and ( min-width: 375px ) {
+    .desktop-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1{
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .text{
+        text-align: left;
+    }
+    .initial-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-right: 15rem;
+        width: 26rem;
+        font-size: 1.5rem;
+        text-align: left;
+        
+    }
+
+    .star{
+        flex-direction: row;
+        padding: 1rem 1rem 0rem 1rem;
+        width: 19rem;
+    }
+    .star:nth-child(2){
+        margin-left: 5rem;
+    }
+    .star:nth-child(3){
+        margin-left: 10rem;
+    }
+    .star p{
+        margin-top: -0.0rem;
+        margin-left: 1rem;
+    }
+
+
+    .box-people{
+        display: flex;
+        flex-direction: row;
+    }
+    .people{
+        width: 19rem;
+        height: 10rem;
+    }
+    .people:nth-child(2){
+        margin-top: 3rem;
+    }
+    .people:nth-child(3){
+        margin-top: 5rem;
+    }
+}
+/*media quieries*/
